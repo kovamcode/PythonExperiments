@@ -9,7 +9,10 @@ outfile.write('Name,Age,Sport')
 outfile.write('\n')
 
 for olympian in olympians:
-    row_string = '{},{},{}'. format(olympian[0], olympian[1], olympian[2])
+      #.format use when we have integers and strings, .join method when we have only strings,
+    row_string = ','.join([olympian[0], str(olympian[1]), olympian[2]])
+  
+    #row_string = '{},{},{}'. format(olympian[0], olympian[1], olympian[2])
     outfile.write(row_string)
     outfile.write('\n')
 outfile.close
