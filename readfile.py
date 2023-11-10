@@ -1,5 +1,4 @@
 fileref = open("olympics.txt", "r")
-lines = fileref.readlines()
-for lin in lines [:r]:
-    print(lin)
+contents = fileref.read()
+print(contents[:100])
 fileref.close()
