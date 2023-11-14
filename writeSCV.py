@@ -12,7 +12,7 @@ for olympian in olympians:
     #row_string = ",".join(olympian) 
     #row_string = ','.join([olympian[0], str(olympian[1]), olympian[2]])
   
-    row_string = '"{}","{}","{}"'. format(olympian[0], olympian[1], olympian[2])
+    row_string = '"{}","{}","{}"'.format(olympian[0], olympian[1], olympian[2])
     outfile.write(row_string)
     outfile.write('\n')
 outfile.close
